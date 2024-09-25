@@ -1,0 +1,16 @@
+<h1 class="text-center">Angular Image Carousel</h1>
+<div class="carousel">
+  <button class="control-left" (click)="previousImage()">&#10094;</button>
+  <div class="item" [style.backgroundImage]="getImageUrl()" (click)="openModal()"></div>
+  <button class="control-right" (click)="nextImage()">&#10095;</button>
+</div>
+
+<div class="modal" *ngIf="isModalOpen" (click)="closeModal()">
+  <span class="close" (click)="closeModal()">&times;</span>
+  <button class="control-left modal-control-left" (click)="previousImage($event)">&#10094;</button>
+  <img class="modal-content" [src]="images[activeImageIndex]" (click)="$event.stopPropagation()" alt="Image in modal">
+  <button class="control-right modal-control-right" (click)="nextImage($event)">&#10095;</button>
+</div>
+
+<img *ngFor="let image of images" [src]="image" width="1" height="1" style="opacity: 0; position: fixed"
+  alt="Hidden image for preloading" />
