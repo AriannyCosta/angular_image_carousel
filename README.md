@@ -18,6 +18,12 @@ A simple and interactive image carousel implemented in Angular, allowing users t
 
 ## Installation
 
+### Option 1: View Online on StackBlitz
+No need to install anything locally! You can view and interact with the project directly on StackBlitz:
+
+https://stackblitz.com/~/github.com/AriannyCosta/manual-angular-carousel
+
+### Option 2: Run Locally
 Follow these steps to set up the project locally:
 
 1. **Clone the repository**:
@@ -25,18 +31,17 @@ Follow these steps to set up the project locally:
    git clone https://github.com/AriannyCosta/manual-angular-carousel.git
 
 2. **Navigate to the project directory**:
-
-cd manual-angular-carousel
+   ```bash
+   cd manual-angular-carousel
 
 3. **Install dependencies:**:
+   ```bash
+   npm install
 
-npm install
+4. **Run the application**:
+   ```bash
+   ng serve
 
-2. **Run the application**:
-
-ng serve
-
-
-2. **Access the application**: 
+5. **Access the application**: 
 
 Open your browser and navigate to http://localhost:4200.
